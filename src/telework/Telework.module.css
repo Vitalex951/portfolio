@@ -1,0 +1,18 @@
+.teleworkBlock {
+    background-color: coral;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.teleworkContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: lightskyblue;
+}
+.title {
+    font-style: italic;
+    background-color: aliceblue;
+    margin: 0 0 10px 0;
+}

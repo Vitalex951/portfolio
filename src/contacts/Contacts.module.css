@@ -1,0 +1,32 @@
+.block {
+    background-color: bisque;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 160px;
+
+}
+
+.form {
+    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*width: 100%;*/
+}
+.form input {
+    margin: 5px 0 5px 0;
+    /*width: 90%;*/
+}
+.form textarea {
+    margin: 5px 0 5px 0;
+    /*width: 90%;*/
+}
