@@ -6,11 +6,13 @@
     align-items: center;
 
 }
+
 .teleworkContainer {
     display: flex;
     flex-direction: column;
     background-color: lightskyblue;
 }
+
 .title {
     font-style: italic;
     background-color: aliceblue;

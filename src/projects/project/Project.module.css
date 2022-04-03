@@ -7,6 +7,7 @@
     justify-content: center;
     margin: 0 0 2px 0;
 }
+
 .imgProject {
     background-color: floralwhite;
     width: 100%;
@@ -15,13 +16,16 @@
     justify-content: center;
     align-items: center;
 }
+
 .button {
     background-color: aliceblue;
 }
+
 .projectTitle {
     background-color: chartreuse;
     width: 100%;
 }
+
 .projectDescription {
     width: 100%;
     background-color: coral;

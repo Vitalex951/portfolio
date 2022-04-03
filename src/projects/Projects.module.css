@@ -9,6 +9,7 @@
     flex-direction: column;
     justify-content: flex-start;
 }
+
 .projects {
     width: 100%;
     display: flex;
@@ -16,6 +17,7 @@
     align-items: flex-start;
     flex-wrap: wrap;
 }
+
 .title {
     background-color: lightskyblue;
 }

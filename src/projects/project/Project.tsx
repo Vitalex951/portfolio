@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Project.module.css'
+
 type ProjectTypeProps = {
     title: string
     description: string
