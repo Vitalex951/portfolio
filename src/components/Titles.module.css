@@ -1,0 +1,23 @@
+
+.title {
+    margin-bottom: 60px;
+    font-family: 'Josefin Slab', serif;
+    font-style: normal;
+    font-size: 60px;
+    line-height: 54px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.title :before {
+    content: '';
+    position: absolute;
+    background: #4e93e6;
+    width: 55px;
+    height: 2px;
+    bottom: -20px;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}

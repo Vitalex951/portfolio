@@ -1,23 +1,28 @@
 .projectsBlock {
-    background-color: bisque;
+    background: #3d3d3d;
     min-height: 100vh;
     font-size: 14px;
+    padding: 30px 0 30px 0;
 }
 
 .projectsContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
 }
 
 .projects {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.title {
-    background-color: lightskyblue;
+@media screen and (max-width: 1129px) {
+    .projects {
+        justify-content: center;
+    }
+
 }

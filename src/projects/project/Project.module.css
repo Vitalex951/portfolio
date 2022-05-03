@@ -1,20 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
 .project {
-    border: 1px solid red;
-    width: 250px;
+    width: 450px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 0 2px 0;
+    background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
+    box-shadow: 0px 4px 15px rgba(156, 148, 139, 0.97);
+    border-radius: 29px;
+    border: 2px solid white;
+    margin: 20px 0 2px 0;
+    transition: transform .2s
+
 }
 
+.project:hover {
+    transform: scale(1.1);
+}
+
+
 .imgProject {
-    background-color: floralwhite;
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    min-height: 100px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 29px;
+    margin: 0 0 10px 0;
 }
 
 .button {
@@ -22,11 +38,26 @@
 }
 
 .projectTitle {
-    background-color: chartreuse;
     width: 100%;
+    font-family: 'Josefin Slab', serif;
+    font-style: normal;
+    font-size: 26px;
+    line-height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+
 }
 
 .projectDescription {
+    padding: 5px;
     width: 100%;
-    background-color: coral;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
 }

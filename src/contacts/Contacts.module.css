@@ -24,9 +24,9 @@
 }
 .form input {
     margin: 5px 0 5px 0;
-    /*width: 90%;*/
+    width:500px;
 }
 .form textarea {
     margin: 5px 0 5px 0;
-    /*width: 90%;*/
+    width: 90%;
 }
