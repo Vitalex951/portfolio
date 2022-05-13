@@ -13,7 +13,6 @@ import Buttons from "./orher/buttons/Buttons";
 function App() {
     return (
         <div className="App">
-            <Buttons/>
             <Other/>
             <Header/>
             <Main/>

@@ -3,7 +3,7 @@ import React from 'react';
 
 type SkillPropsType = {
     title: string
-    description: string
+    // description: string
 
 }
 export const Skill = (props: SkillPropsType) => {
@@ -14,9 +14,9 @@ export const Skill = (props: SkillPropsType) => {
                     <h3>{props.title}</h3>
                 </div>
             </div>
-            <span className={s.description}>
-                {props.description}
-            </span>
+            {/*<span className={s.description}>*/}
+            {/*    {props.description}*/}
+            {/*</span>*/}
         </div>
     );
 };

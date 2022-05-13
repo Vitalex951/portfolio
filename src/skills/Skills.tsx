@@ -10,17 +10,18 @@ export const Skills = () => {
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={s.skills}>
-                    <Skill title={'JS'}
-                           description={'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem cum dolor ea eligendi excepturi illo, i'}/>
-                    <Skill title={'React'}
-                           description={'llum impedit ipsum iure iusto nemo nobis odit, pariatur provident soluta, voluptas voluptatum! Error, sunt!'}/>
-                    <Skill title={'HTML'}
-                           description={'llum impedit ipsum iure iusto nemo nobis odit, pariatur provident soluta, voluptas voluptatum! Error, sunt!'}/>
-                    <Skill title={'Redux'}
-                           description={'llum impedit ipsum iure iusto nemo nobis odit, pariatur provident soluta, voluptas voluptatum! Error, sunt!'}/>
-
-                    <Skill title={'CSS'}
-                           description={'llum impedit ipsum iure iusto nemo nobis odit, pariatur provident soluta, voluptas voluptatum! Error, sunt!'}/>
+                    <Skill title={'JS'}/>
+                    <Skill title={'React'}/>
+                    <Skill title={'HTML'}/>
+                    <Skill title={'Redux'}/>
+                    <Skill title={'CSS'}/>
+                    <Skill title={'Formik'}/>
+                    <Skill title={'RRD'}/>
+                    <Skill title={'TScript'}/>
+                    <Skill title={'RestAPI'}/>
+                    <Skill title={'THUNK'}/>
+                    <Skill title={'MUI'}/>
+                    <Skill title={'GIT'}/>
                 </div>
             </div>
         </div>
