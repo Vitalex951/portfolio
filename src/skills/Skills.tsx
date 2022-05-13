@@ -10,16 +10,16 @@ export const Skills = () => {
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={s.skills}>
+                    <Skill title={'HTML'}/>
+                    <Skill title={'CSS'}/>
                     <Skill title={'JS'}/>
                     <Skill title={'React'}/>
-                    <Skill title={'HTML'}/>
                     <Skill title={'Redux'}/>
-                    <Skill title={'CSS'}/>
-                    <Skill title={'Formik'}/>
-                    <Skill title={'RRD'}/>
                     <Skill title={'TScript'}/>
+                    <Skill title={'RRD'}/>
                     <Skill title={'RestAPI'}/>
                     <Skill title={'THUNK'}/>
+                    <Skill title={'Formik'}/>
                     <Skill title={'MUI'}/>
                     <Skill title={'GIT'}/>
                 </div>
