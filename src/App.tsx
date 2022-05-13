@@ -8,10 +8,12 @@ import {Footer} from "./footer/Footer";
 import {Projects} from "./projects/Projects";
 import {Main} from "./main/Main";
 import Other from "./orher/other";
+import Buttons from "./orher/buttons/Buttons";
 
 function App() {
     return (
         <div className="App">
+            <Buttons/>
             <Other/>
             <Header/>
             <Main/>
