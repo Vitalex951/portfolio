@@ -12,6 +12,7 @@
     border-radius: 29px;
     border: 2px solid white;
     margin: 20px 0 2px 0;
+    z-index: 0;
     transition: transform .2s
 
 }

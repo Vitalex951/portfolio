@@ -5,7 +5,7 @@ import sContainer from '../common/styles/Container.module.css'
 export const Main = () => {
     return (
         <div className={s.mainBlock}>
-            <div className={sContainer.container}>
+            <div className={`${sContainer.container} ${s.container}`}>
                 <div className={s.text}>
                     <div className={s.textOne}>
                         <span className={s.hello}>HELLO</span>
