@@ -10,10 +10,9 @@
 /*}*/
 
 .skill {
-    min-width: 150px;
-    /*min-height: 200px;*/
-    left: 365px;
-    top: 900px;
+    min-width: 120px;
+    min-height: 120px;
+
     background: #2A2A2A;
     border-radius: 29px;
     padding: 25px 0 0 0;
@@ -31,13 +30,13 @@
 }
 .icon {
     color: #4e93e6;
-    height: 80px;
-    width: 80px;
+    height: 65px;
+    width: 65px;
     margin: 0px auto 30px;
     background: rgba(255,255,255,0.1);
     display: block;
-    line-height: 80px;
-    font-size: 26px;
+    line-height: 65px;
+    font-size: 18px;
     /*box-shadow: -6px 10px 40px rgb(0 0 0 / 6%);*/
     text-align: center;
     transform: rotate(45deg);

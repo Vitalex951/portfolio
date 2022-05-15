@@ -6,14 +6,16 @@ export const Footer = () => {
     return (
         <div className={s.block}>
             <div className={`${sContainer.container} ${s.container}`}>
-                <h5 className={s.title}>Vital</h5>
-                <div className={s.footer}>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div  className={s.title}>
+                    Vital
                 </div>
-                <span className={s.span}>© 2022 Все права защищены  </span>
+                {/*<div className={s.footer}>*/}
+                {/*    <div></div>*/}
+                {/*    <div></div>*/}
+                {/*    <div></div>*/}
+                {/*    <div></div>*/}
+                {/*</div>*/}
+                <span className={s.span}>© 2022 Created under my wife’s strict control (supervision)</span>
             </div>
         </div>
     );

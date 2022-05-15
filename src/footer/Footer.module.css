@@ -1,6 +1,6 @@
 .block {
-    min-height: 20vh;
-    background-color: beige;
+    /*min-height: 70px;*/
+    background: #3d3d3d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,27 +11,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 15px;
 }
 
 .footer {
     display: flex;
     min-width: 280px;
-    border: 1px solid;
     justify-content: space-between;
 }
 
 .footer div {
     width: 50px;
     height: 50px;
-    background-color: coral;
 }
 
 .span {
-    margin: 10px 0 0 0;
-    background-color: aqua;
+    /*margin: 10px 0 0 0;*/
+    color: #FFFFFF;
 }
 
 .title {
     margin: 0 0 10px 0;
-    background-color: lightblue;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20px;
+    font-weight: 400;
 }

@@ -1,0 +1,26 @@
+.block {
+
+}
+
+.contact {
+    font-size: 16px;
+    color: white;
+    padding: 4px;
+     display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+
+}
+
+.contact img {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    border-radius: 13px;
+    margin-right: 10px;
+}
+.contact a {
+    color: white;
+    display: flex;
+    align-items: center;
+}

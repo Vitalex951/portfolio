@@ -60,7 +60,7 @@ h1.deepshadow {
 .description {
     font-family: 'Noto Sans', sans-serif;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 150%;
     text-align: left;
 }
 

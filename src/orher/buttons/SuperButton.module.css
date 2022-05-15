@@ -1,4 +1,4 @@
-.pressed-button {
+.pressedButton {
     text-decoration: none;
     display: inline-block;
     padding: 12px 40px;
@@ -14,7 +14,7 @@
     box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
     transition: .5s;
 }
-.pressed-button:hover {
+.pressedButton:hover {
     box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
     background-position: 0 0;
 }
