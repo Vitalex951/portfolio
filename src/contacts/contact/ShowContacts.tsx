@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import s from './oth.module.css'
+import s from './ShowContacts.module.css'
 import {Contact} from "./Contact";
 import SuperButton from "../../orher/buttons/SuperButton";
 import phone from "../../assets/img/phonepng.png";
 import telegram from "../../assets/img/Telegram_logo.svg.png";
 import github from "../../assets/img/github.png";
 import linkedID from "../../assets/img/link.png";
-import './other.css'
+import './Contact.css'
 export type contactType = {
     title: string
     imgSrc: string

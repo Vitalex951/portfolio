@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Contacts.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Title} from "../components/Title";
-import {ShowContacts} from "./contact/oth";
+import {ShowContacts} from "./contact/ShowContacts";
 
 
 export const Contacts = () => {

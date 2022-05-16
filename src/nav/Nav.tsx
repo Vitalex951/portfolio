@@ -12,7 +12,7 @@ export const Nav = () => {
 
             const blockID = anchor.getAttribute('href')
 
-            document.querySelector(blockID).scrollIntoView({
+            document.querySelector(blockID).scrollTo({
                 behavior: 'smooth',
                 block: 'start'
             })
@@ -20,10 +20,10 @@ export const Nav = () => {
     }
     return (
         <div className={s.nav}>
-            <a href="#main" className="scroll-to">Главная</a>
-            <a href="#skills" className="scroll-to">Скилы</a>
-            <a href="#projects" className="scroll-to">Проекты</a>
-            <a href="#contacts" className="scroll-to">Контакты</a>
+            <a href="#main" className="scroll-to">Home</a>
+            <a href="#skills" className="scroll-to">Skills</a>
+            <a href="#projects" className="scroll-to">Projects</a>
+            <a href="#contacts" className="scroll-to">Contacts</a>
         </div>
     );
 };

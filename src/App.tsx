@@ -7,11 +7,13 @@ import {Footer} from "./footer/Footer";
 import {Projects} from "./projects/Projects";
 import {Main} from "./main/Main";
 import Stars from "./orher/stars";
+import {ScrollToTop} from "./nav/ScrollToTop";
 
 
 function App() {
     return (
         <div className="App">
+            <ScrollToTop/>
             <Stars/>
             <Header/>
             <Main/>

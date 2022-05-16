@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './contact.module.css'
-import {contactType} from "./oth";
+import {contactType} from "./ShowContacts";
 
 
 type contactPropsType = {
