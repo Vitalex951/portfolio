@@ -6,8 +6,12 @@ import {Title} from "../components/Title";
 import socialImg from '../assets/img/soc.jpg'
 import todolistImg from '../assets/img/todolist.jpg'
 
+type ProjectsTypeProps = {
+    componentRef: any
+}
 
-export const Projects = () => {
+
+export const Projects = (props: ProjectsTypeProps) => {
     const socialNetwork = {
         backgroundImage: `url(${socialImg})`,
     };
@@ -18,7 +22,7 @@ export const Projects = () => {
 
 
     return (
-        <div className={s.projectsBlock} id={'projects'}>
+        <div ref={props.componentRef} className={s.projectsBlock} id={'projects'}>
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
                 <Title title={'Projects'}/>
 

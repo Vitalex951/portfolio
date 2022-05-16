@@ -11,15 +11,29 @@ import {ScrollToTop} from "./nav/ScrollToTop";
 
 
 function App() {
+    const main = React.useRef(null);
+    const skills = React.useRef(null);
+    const projects = React.useRef(null);
+    const contacts = React.useRef(null);
+    const buttonHandler = (ref: any) => {
+        ref.current.scrollIntoView({behavior: 'smooth'});
+    };
+
     return (
         <div className="App">
             <ScrollToTop/>
             <Stars/>
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Contacts/>
+            <Header
+                callback={buttonHandler}
+                main={main}
+                skills={skills}
+                projects={projects}
+                contacts={contacts}
+            />
+            <Main componentRef={main}/>
+            <Skills componentRef={skills}/>
+            <Projects componentRef={projects}/>
+            <Contacts componentRef={contacts}/>
             <Footer/>
 
         </div>

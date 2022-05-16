@@ -4,10 +4,13 @@ import sContainer from '../common/styles/Container.module.css'
 import {Title} from "../components/Title";
 import {ShowContacts} from "./contact/ShowContacts";
 
+type ContactsProps = {
+    componentRef: any
+}
 
-export const Contacts = () => {
+export const Contacts = (props: ContactsProps) => {
     return (
-        <div className={s.block} id={'contacts'}>
+        <div ref={props.componentRef}  className={s.block} id={'contacts'}>
             <div className={`${sContainer.container} ${s.container}`}>
                 <Title title={'Contacts'}/>
 

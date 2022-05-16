@@ -1,11 +1,22 @@
 import React from 'react';
 import s from './Header.module.css'
 import {Nav} from "../nav/Nav";
+type HeaderPropsType = {
+    callback: (ref: any) => void
+    main: any
+    skills: any
+    contacts: any
+    projects: any
+}
 
-export const Header = () => {
+export const Header = (props: HeaderPropsType) => {
     return (
         <div className={s.header}>
-            <Nav/>
+            <Nav callback={props.callback}
+                 main={props.main}
+                 skills={props.skills}
+                 projects={props.projects}
+                 contacts={props.contacts}/>
         </div>
     );
 };

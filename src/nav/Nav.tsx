@@ -1,29 +1,44 @@
 import React from 'react';
 import s from './Nav.module.css'
 
-export const Nav = () => {
+type NavPropsType = {
+    callback: (ref: any) => void
+    main: any
+    skills: any
+    contacts: any
+    projects: any
+}
 
-    const anchors = document.querySelectorAll('a.scroll-to')
+export const Nav = (props: NavPropsType) => {
 
-    // @ts-ignore
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (e: any) {
-            e.preventDefault()
 
-            const blockID = anchor.getAttribute('href')
+    // const anchors = document.querySelectorAll('a.scroll-to')
+    // for (let anchor of anchors) {
+    //     anchor.addEventListener('click', function (e) {
+    //         e.preventDefault()
+    //
+    //         const blockID = anchor.getAttribute('href')
+    //
+    //         document.querySelector(blockID).scrollTo({
+    //             behavior: 'smooth',
+    //             block: 'start'
+    //         })
+    //     })
+    // }
 
-            document.querySelector(blockID).scrollTo({
-                behavior: 'smooth',
-                block: 'start'
-            })
-        })
-    }
+    // const scroll = () => {
+    //     const blockID = anchor.getAttribute('href')
+    //     document.querySelector(blockID).scrollTo({
+    //         behavior: 'smooth',
+    //         block: 'start'
+    //     })
+    // }
     return (
         <div className={s.nav}>
-            <a href="#main" className="scroll-to">Home</a>
-            <a href="#skills" className="scroll-to">Skills</a>
-            <a href="#projects" className="scroll-to">Projects</a>
-            <a href="#contacts" className="scroll-to">Contacts</a>
+            <span onClick={() => props.callback(props.main)} className="scroll-to">Home</span>
+            <span onClick={() => props.callback(props.skills)} className="scroll-to">Skills</span>
+            <span onClick={() => props.callback(props.projects)} className="scroll-to">Projects</span>
+            <span onClick={() => props.callback(props.contacts)} className="scroll-to">Contacts</span>
         </div>
     );
 };

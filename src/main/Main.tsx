@@ -3,12 +3,17 @@ import s from './Main.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Download} from "../orher/downolaod/Download";
 
-export const Main = () => {
+type ContactsProps = {
+    componentRef: any
+}
+
+
+export const Main = (props: ContactsProps) => {
     const callback = () => {
         
     }
     return (
-        <div className={s.mainBlock} id={'main'}>
+        <div ref={props.componentRef} className={s.mainBlock} id={'main'}>
             <div className={`${sContainer.container} ${s.container}`}>
                 <div className={s.text}>
                     <div className={s.textOne}>

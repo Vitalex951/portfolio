@@ -3,10 +3,14 @@ import s from './Skills.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../components/Title";
+type SkillsProps = {
+    componentRef: any
+}
 
-export const Skills = () => {
+
+export const Skills = (props:SkillsProps) => {
     return (
-        <div className={s.skillsBlock} id={'skills'}>
+        <div ref={props.componentRef} className={s.skillsBlock} id={'skills'}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
                 <Title title={'Skills'}/>
                 <div className={s.skills}>
