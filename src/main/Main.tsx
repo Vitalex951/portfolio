@@ -10,7 +10,7 @@ type ContactsProps = {
 
 export const Main = (props: ContactsProps) => {
     const callback = () => {
-        
+
     }
     return (
         <div ref={props.componentRef} className={s.mainBlock} id={'main'}>
@@ -23,9 +23,12 @@ export const Main = (props: ContactsProps) => {
                         <h1 className={s.deepshadow}>I’m Vitaliy
                             Gushcha</h1></div>
                     {/*<p>I've been doing web design, front-end and back-end development for a year now. Do you need a website design, site layout, or maybe a turnkey website? Then contact me</p>*/}
-                    <p className={s.description}>Я фронтенд-разработчик.
-                        Имею опыт создания SPA используя React, Redux,
-                        TypeScript, JavaScript. Готов рассмотреть проектную работу и полную занятость</p>
+                    {/*<p className={s.description}>Я фронтенд-разработчик.*/}
+                    {/*    Имею опыт создания SPA используя React, Redux,*/}
+                    {/*    TypeScript, JavaScript. Готов рассмотреть проектную работу и полную занятость</p>*/}
+                    <p className={s.description}>I'm frontend developer with experience in creating SPA using React,
+                        Redux, TypeScript, JavaScript, SCSS, HTML. Ready to consider project work and full-time
+                        employment.</p>
                     <div>
                         <Download callback={callback}/>
                     </div>
