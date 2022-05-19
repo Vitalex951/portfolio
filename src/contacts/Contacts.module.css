@@ -1,9 +1,9 @@
 .block {
     background: #333;
-    min-height: 60vh;
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    /*min-height: 60vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     color: white;
@@ -12,9 +12,6 @@
     align-items: center;
     justify-content: center;
     min-height: 160px;
-    /*overflow: hidden;*/
-    border: 1px solid white;
-
 }
 
 .form {
@@ -85,10 +82,4 @@
     opacity: 0;
     transition: 0.8s all;
     transform: translateY(-10px);
-}
-
-@media screen and (max-width: 750px) {
-    .container {
-        flex-wrap:  nowrap;
-    }
 }

@@ -1,8 +1,13 @@
-import s from "./contact.module.css";
-import React from "react";
-import {contactPropsType} from "./SetContacts";
+import React from 'react';
+import s from './contact.module.css'
+import {contactType} from "./ShowContacts";
 
-export const NewContact = (props: contactPropsType) => {
+
+export type contactPropsType = {
+    contacts: contactType[]
+}
+
+export const SetContacts = (props: contactPropsType) => {
     return (
         <div className={s.contactData}>
             <div className={s.newBlock}>
@@ -30,4 +35,5 @@ export const NewContact = (props: contactPropsType) => {
             </div>
         </div>
     )
-}
+};
+

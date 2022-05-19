@@ -8,7 +8,6 @@ import {Projects} from "./projects/Projects";
 import {Main} from "./main/Main";
 import Stars from "./orher/stars";
 import {ScrollToTop} from "./nav/ScrollToTop";
-import Scroll from './nav/scroll/Scroll';
 
 
 function App() {
