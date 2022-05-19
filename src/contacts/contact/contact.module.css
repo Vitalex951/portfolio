@@ -24,3 +24,86 @@
     display: flex;
     align-items: center;
 }
+
+
+.contactData {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-width: 240px;
+    width: 500px;
+    margin-bottom: 1.875rem;
+}
+
+.newBlock{
+    margin-bottom: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /*align-items: center;*/
+    padding: 10px 0 ;
+    width: 300px;
+    text-align: left;
+}
+
+.newBlockImg {
+    border: 1px solid #fec544;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    margin-right: 0.75rem;
+    text-align: center;
+    width: 3rem;
+    color: #fec544;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newBlockImg img{
+    width: 27px;
+    height: 27px;
+    border-radius: 13px;
+}
+
+.urlImg {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataBlock_description{
+    display: flex;
+    flex-direction: column;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+.dataBlock_description span {
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+.dataBlock_description h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+.contactContainer {
+    display: flex;
+    margin: 5px 0 ;
+    align-items: center;
+}
+
+.hr {
+    color: white;
+}

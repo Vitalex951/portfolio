@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './ScrollToTop.css'
 
 export const ScrollToTop = () => {
@@ -28,6 +28,19 @@ export const ScrollToTop = () => {
     //         scrollUp.classList.remove('scrollUp_up--active');
     //     }
     // })
+
+
+
+
+
+    // This function will scroll the window to the top
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // for smoothly scrolling
+        });
+    };
+
 
     //click
 const scroll = () => {

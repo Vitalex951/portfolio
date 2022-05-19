@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import {Header} from "./header/Header";
 import {Contacts} from "./contacts/Contacts";
@@ -8,6 +8,7 @@ import {Projects} from "./projects/Projects";
 import {Main} from "./main/Main";
 import Stars from "./orher/stars";
 import {ScrollToTop} from "./nav/ScrollToTop";
+import Scroll from './nav/scroll/Scroll';
 
 
 function App() {
@@ -19,9 +20,24 @@ function App() {
         ref.current.scrollIntoView({behavior: 'smooth'});
     };
 
+    //ShowScroll
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset > 300) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        });
+    }, []);
+
     return (
         <div className="App">
-            <ScrollToTop/>
+
+            {showButton && <ScrollToTop/>}
+
             <Stars/>
             <Header
                 callback={buttonHandler}
