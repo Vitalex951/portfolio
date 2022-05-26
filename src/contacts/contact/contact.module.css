@@ -20,8 +20,6 @@
     display: flex;
     align-items: center;
 }
-
-
 .contactData {
     display: flex;
     flex-direction: column;
