@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './Header.module.css'
 import {Nav} from "../nav/Nav";
+import {BurgerNav} from "../burgerNav/BurgerNav";
 type HeaderPropsType = {
     callback: (ref: any) => void
     main: any
@@ -17,6 +18,7 @@ export const Header = (props: HeaderPropsType) => {
                  skills={props.skills}
                  projects={props.projects}
                  contacts={props.contacts}/>
+            <BurgerNav/>
         </div>
     );
 };

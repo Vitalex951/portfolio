@@ -6,8 +6,9 @@ import {Skills} from "./skills/Skills";
 import {Footer} from "./footer/Footer";
 import {Projects} from "./projects/Projects";
 import {Main} from "./main/Main";
-import Stars from "./orher/stars";
 import {ScrollToTop} from "./nav/ScrollToTop";
+import Stars from "./orher/stars";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 function App() {
@@ -34,9 +35,7 @@ function App() {
 
     return (
         <div className="App">
-
             {showButton && <ScrollToTop/>}
-
             <Stars/>
             <Header
                 callback={buttonHandler}

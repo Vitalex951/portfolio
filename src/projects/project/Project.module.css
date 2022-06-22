@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(130.68deg, #414141 0%, #2D2D2D 100.52%);
-    box-shadow: 0px 0px 13px 6px #000;
+    box-shadow: 0px 0px 13px 6px rgb(0 0 0 / 38%);
     border-radius: 29px;
     border: 2px solid white;
     margin: 20px 0 2px 0;

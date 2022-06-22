@@ -3,16 +3,19 @@ import s from './Skills.module.css'
 import sContainer from '../common/styles/Container.module.css'
 import {Skill} from "./skill/Skill";
 import {Title} from "../components/Title";
+import {Fade, Roll} from "react-awesome-reveal";
+
 type SkillsProps = {
     componentRef: any
 }
 
 
-export const Skills = (props:SkillsProps) => {
+export const Skills = (props: SkillsProps) => {
     return (
         <div ref={props.componentRef} className={s.skillsBlock} id={'skills'}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                <Title title={'Skills'}/>
+                    <Title title={'Skills'}/>
+
                 <div className={s.skills}>
                     <Skill title={'HTML'}/>
                     <Skill title={'CSS'}/>
@@ -27,6 +30,7 @@ export const Skills = (props:SkillsProps) => {
                     <Skill title={'MUI'}/>
                     <Skill title={'GIT'}/>
                 </div>
+
             </div>
         </div>
     );

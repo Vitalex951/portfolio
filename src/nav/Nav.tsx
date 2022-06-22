@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './Nav.module.css'
+import {Link} from "react-scroll";
 
 type NavPropsType = {
     callback: (ref: any) => void
@@ -37,7 +38,15 @@ export const Nav = (props: NavPropsType) => {
         <div className={s.nav}>
             <span onClick={() => props.callback(props.main)} className="scroll-to">Home</span>
             <span onClick={() => props.callback(props.skills)} className="scroll-to">Skills</span>
-            <span onClick={() => props.callback(props.projects)} className="scroll-to">Projects</span>
+            {/*<span onClick={() => props.callback(props.projects)} className="scroll-to">Projects</span>*/}
+            <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={700}
+            >Projects</Link>
             <span onClick={() => props.callback(props.contacts)} className="scroll-to">Contacts</span>
         </div>
     );

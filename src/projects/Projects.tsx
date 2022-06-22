@@ -46,7 +46,7 @@ export const Projects = (props: ProjectsTypeProps) => {
 
 
     return (
-        <div ref={props.componentRef} className={s.projectsBlock} id={'projects'}>
+        <div ref={props.componentRef} className={s.projectsBlock} id={'projects'} >
             <div className={`${sContainer.container} ${s.projectsContainer}`}>
 
 
