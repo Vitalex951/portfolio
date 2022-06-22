@@ -72,3 +72,11 @@
 .buttonDemo {
     font-size: 10px;
 }
+
+.btns {
+    display: flex;
+}
+
+.styleButton {
+    background-color: red;
+}

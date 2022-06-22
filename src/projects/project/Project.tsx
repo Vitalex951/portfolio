@@ -6,8 +6,17 @@ type ProjectTypeProps = {
     title: string
     description: string
     backgroundImage: string
+    urlCode: string
+    urlDemo: string
 }
 export const Project = (props: ProjectTypeProps) => {
+    const onClickHeaderDemo = () => {
+        window.open(props.urlDemo)
+    }
+    const onClickHeaderCode = () => {
+        window.open(props.urlCode)
+    }
+
     return (
         <div className={s.project}>
             <div style={{backgroundImage: props.backgroundImage}} className={s.imgProject}
@@ -21,7 +30,11 @@ export const Project = (props: ProjectTypeProps) => {
             <div className={s.projectDescription}>
                 <span>{props.description}</span>
             </div>
-            <SuperButton className={s.buttonDemo} >Demo</SuperButton>
+
+            <div className={s.btns}>
+                <SuperButton className={s.buttonDemo} onClick={onClickHeaderDemo}>Demo</SuperButton>
+                <SuperButton className={s.buttonDemo} onClick={onClickHeaderCode}>Code</SuperButton>
+            </div>
         </div>
     );
 };

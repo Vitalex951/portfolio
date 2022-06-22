@@ -5,13 +5,13 @@ import s from './SuperButton.module.css'
 type DefaultButtonPropsType = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
 
 type SuperButtonPropsType = DefaultButtonPropsType & {
-    red?: boolean
+    styleBtn?: object
 }
 
 
 const SuperButton: React.FC<SuperButtonPropsType> = (
     {
-        red, className,
+        styleBtn, className,
         ...restProps// все остальные пропсы попадут в объект restProps, там же будет children
     }
 ) => {

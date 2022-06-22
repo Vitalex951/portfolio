@@ -11,24 +11,14 @@ type SkillsProps = {
 
 
 export const Skills = (props: SkillsProps) => {
+    const mySkills: string[] = ['React', 'Redux', 'JS', 'TScript', 'RRD', 'RestAPI', 'HTML5', 'CSS', 'THUNK', 'Formik', 'MUI', 'GIT']
     return (
         <div ref={props.componentRef} className={s.skillsBlock} id={'skills'}>
             <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                    <Title title={'Skills'}/>
+                <Title title={'Skills'}/>
 
                 <div className={s.skills}>
-                    <Skill title={'HTML'}/>
-                    <Skill title={'CSS'}/>
-                    <Skill title={'JS'}/>
-                    <Skill title={'React'}/>
-                    <Skill title={'Redux'}/>
-                    <Skill title={'TScript'}/>
-                    <Skill title={'RRD'}/>
-                    <Skill title={'RestAPI'}/>
-                    <Skill title={'THUNK'}/>
-                    <Skill title={'Formik'}/>
-                    <Skill title={'MUI'}/>
-                    <Skill title={'GIT'}/>
+                    {mySkills.map((el, i) =>  <Skill key={i} title={el}/>)}
                 </div>
 
             </div>
