@@ -4,10 +4,8 @@
     display: flex;
     justify-content: right;
     flex-wrap: nowrap;
-    margin: 20px 30px 0 0;
     font-size: 18px;
     position: relative;
-
 }
 
 .burgerNav a {
@@ -27,24 +25,28 @@
 
 
 .burgerNavItems{
-    display: none;
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     flex-wrap: nowrap;
-    background-color: rgba(255,255,255,0.43);
+    background: #3d3d3d;
     position: absolute;
     right: 0;
-    top: 50px;
-
+    top: 0;
+    height: 0;
+    padding: 20px;
+    transform: translate(0, -150px);
+    transition: .7s;
 }
 .show {
-    display: flex;
+    transform: translate(0, 0);
+    height: 150px;
 }
 
-@media screen and (min-width: 600px) {
-    .burgerNav {
-        display: none;
-    }
-
-}
+/*@media screen and (min-width: 600px) {*/
+/*    .burgerNav {*/
+/*        display: none;*/
+/*    }*/
+/*}*/

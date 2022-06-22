@@ -18,7 +18,7 @@ export const Header = (props: HeaderPropsType) => {
                  skills={props.skills}
                  projects={props.projects}
                  contacts={props.contacts}/>
-            <BurgerNav/>
+            {/*<BurgerNav/>*/}
         </div>
     );
 };
