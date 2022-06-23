@@ -19,8 +19,7 @@ export const Project = (props: ProjectTypeProps) => {
 
     return (
         <div className={s.project}>
-            <div style={{backgroundImage: props.backgroundImage}} className={s.imgProject}
-                 onClick={() => alert(props.title)}>
+            <div style={{backgroundImage: props.backgroundImage}} className={s.imgProject} onClick={onClickHeaderDemo}>
                 {/*<button className={s.button}>Look</button>*/}
             </div>
             <div className={s.projectTitle}>
@@ -32,8 +31,8 @@ export const Project = (props: ProjectTypeProps) => {
             </div>
 
             <div className={s.btns}>
-                <SuperButton className={s.buttonDemo} onClick={onClickHeaderDemo}>Demo</SuperButton>
-                <SuperButton className={s.buttonDemo} onClick={onClickHeaderCode}>Code</SuperButton>
+                <SuperButton className={s.buttonDemo} styleBtn={'pressedButtonDemo'} onClick={onClickHeaderDemo}>Demo</SuperButton>
+                <SuperButton className={s.buttonDemo} styleBtn={'pressedButtonCode'} onClick={onClickHeaderCode}>Code</SuperButton>
             </div>
         </div>
     );

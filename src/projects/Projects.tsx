@@ -24,32 +24,32 @@ type ProjectValueType = {
 export const Projects = (props: ProjectsTypeProps) => {
     const projectsValue: ProjectValueType[] = [
         {
+            title: 'Cards',
+            backgroundImage: `url(${cards})`,
+            description: "It's team-work project. Our team used Tailwind UI, JavaScript, TypeScript, React, Redux, Redux-toolkit, ESLint, Prettier; Using Typescript for best code control during development, refactoring, bug fixing, deploying.",
+            urlCode: 'https://github.com/Vitalex951/Friday_Project',
+            urlDemo: 'https://vitalex951.github.io/Friday_Project/'
+        },
+        {
             title: 'SocialNetwork',
             backgroundImage: `url(${socialImg})`,
-            description: "It's my social network project - MOON msg! I use in the this project React, Redux, API requests, clean css, axios, thunks, and more.",
-            urlCode: '',
+            description: "It's my social network project - MOON msg! I use in the this project React, Redux, API requests, css, mui,  axios, thunks, and more.",
+            urlCode: 'https://github.com/Vitalex951/it-incubator-samurai',
             urlDemo: 'https://vitalex951.github.io/it-incubator-samurai/'
         },
         {
             title: 'ToDoList',
             backgroundImage: `url(${todolistImg})`,
             description: "It's my ToDo-application - MOON tasks! I use in the this project React, Redux, clean CSS, and more.",
-            urlCode: '',
-            urlDemo: ''
-        },
-        {
-            title: 'Cards',
-            backgroundImage: `url(${cards})`,
-            description: "It's team-work project. Our team used Tailwind UI, JavaScript, TypeScript, React, Redux, Redux-toolkit, ESLint, Prettier; Using Typescript for best code control during development, refactoring, bug fixing, deploying.",
-            urlCode: '',
-            urlDemo: ''
+            urlCode: 'https://github.com/Vitalex951/ToDoList',
+            urlDemo: 'https://vitalex951.github.io/ToDoList/'
         },
         {
             title: 'Counter',
             backgroundImage: `url(${counter})`,
             description: "This project - just simple counter with settings start value and end value. I used in this project React, Redux, clean CSS. ",
-            urlCode: '',
-            urlDemo: ''
+            urlCode: 'https://github.com/Vitalex951/counter',
+            urlDemo: 'https://vitalex951.github.io/counter/'
         },
 
     ]
